@@ -14,7 +14,7 @@ func TestUploadFile(t *testing.T) {
 			uploadFile(response, request)
 
 			got := response.Body.String()
-			want := "Uploading File"
+			want := "Uploaded File"
 
 			if got != want {
 					t.Errorf("got %q, want %q", got, want)
